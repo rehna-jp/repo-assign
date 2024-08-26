@@ -1,9 +1,12 @@
+//Create a class named `MyBills` that inherits from the `Bills` class
 public class MyBills extends Bills {
 
+   //A default constructor that creates an object with default values (i.e., 0) for `gallons`, `minutes`, and `kilowatts
     public MyBills() {
         super(0, 0, 0);
     }
 
+   //A constructor that initializes the `MyBills` object with the specified values for `gallons`, `minutes`, and `kilowatts`
     public MyBills(double gallons, double minutes, double kilowatts) {
         super(gallons, minutes, kilowatts);
     }
