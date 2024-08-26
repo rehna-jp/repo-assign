@@ -11,6 +11,7 @@ public class MyBills extends Bills {
         super(gallons, minutes, kilowatts);
     }
 
+   //Create a method called electricityBill()
     public double electricityBill() {
         if (getKilowatts() <= 50) {
             return 0.0;
