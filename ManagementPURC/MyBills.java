@@ -20,17 +20,17 @@ public class MyBills extends Bills {
         if (getKilowatts() <= 50) { // The first 50 kilowatts of electricity consumed is free
             return 0.0;
         } else if (getKilowatts() <= 100) { // For the next 100 kilowatts, the rate is GHS 0.50 per kilowatt
-            return (getKilowatts() - 50) * 0.05;
+            return (getKilowatts() - 50) * 0.50;
         } else { // For any additional kilowatts consumed beyond 150(50 + 100), the rate is GHC
                  // 1.20 per kilowatt
-            return (0.50 + 100) * (getKilowatts() - 150) * 1.20;
+            return (50 + 100) * (getKilowatts() - 150) * 1.20;
         }
     }
 
     // A method named telephoneBill() that returns the computed telephone bill
     public double telephoneBill() {
         if (getMinutes() <= 50) {// The first 5 minutes of phone calls are free
-            return 0;
+            return 0.0;
         } else { // For any additional minutes beyond 5, the rate is GHS 0.60 per minute
             return (getMinutes() - 50) * 0.60;
         }
