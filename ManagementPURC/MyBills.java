@@ -23,7 +23,7 @@ public class MyBills extends Bills {
             return (getKilowatts() - 50) * 0.50;
         } else { // For any additional kilowatts consumed beyond 150(50 + 100), the rate is GHC
                  // 1.20 per kilowatt
-            return (50 + 100) * (getKilowatts() - 150) * 1.20;
+            return (0.50 * 100) + (getKilowatts() - 150) * 1.20;
         }
     }
 
