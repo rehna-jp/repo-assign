@@ -19,7 +19,7 @@ public class MyBills extends Bills {
     public double electricityBill() {
         if (getKilowatts() <= 50) { // The first 50 kilowatts of electricity consumed is free
             return 0.0;
-        } else if (getKilowatts() <= 100) { // For the next 100 kilowatts, the rate is GHS 0.50 per kilowatt
+        } else if (getKilowatts() <= 150) { // For the next 100 kilowatts, the rate is GHS 0.50 per kilowatt
             return (getKilowatts() - 50) * 0.50;
         } else { // For any additional kilowatts consumed beyond 150(50 + 100), the rate is GHC
                  // 1.20 per kilowatt
