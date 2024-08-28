@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ShoppingCart {
 
+	//Method to display items in the cart
     public void displayCart(Item[] items, int itemCount) {
         if (itemCount == 0) {
             System.out.println("The cart is empty");
