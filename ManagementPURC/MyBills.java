@@ -29,10 +29,10 @@ public class MyBills extends Bills {
 
     // A method named telephoneBill() that returns the computed telephone bill
     public double telephoneBill() {
-        if (getMinutes() <= 50) {// The first 5 minutes of phone calls are free
+        if (getMinutes() <= 5) {// The first 5 minutes of phone calls are free
             return 0.0;
         } else { // For any additional minutes beyond 5, the rate is GHS 0.60 per minute
-            return (getMinutes() - 50) * 0.60;
+            return (getMinutes() - 5) * 0.60;
         }
     }
 
