@@ -1,2 +1,3 @@
 # Assignments
-Java Assignments and Projects
+Java Projects
+
