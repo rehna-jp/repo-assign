@@ -13,7 +13,7 @@ public class TestCircle {
             Cone ConeTop = new Cone(radius, height);
 
             // Display the radius, height, area, volume, and cost of the cone in the figure
-            String output = String.format("Radius: %d\nHeight: %d\nArea: %5.2f\nVolume: %5.3f\nCost: GHC %5.2f", radius,
+            String output = String.format("Radius: %d\nHeight: %d\nArea: %5.2f\nVolume: %5.6f\nCost: GHC %5.2f", radius,
                     height, ConeTop.area(), ConeTop.volume(), ConeTop.cost());
 
             // below using JOPTION. (show message dialog with the String 'output' as the
