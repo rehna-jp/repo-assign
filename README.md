@@ -1,4 +1,4 @@
-# Assignments ![A](https://github.com/paren-thesis/Assignments/blob/main/image.jpg)
+# Assignments ![A](https://github.com/paren-thesis/Assignments/blob/main/a.jpg)
 ## Mini Java Projects - Projects For New Developers and Advanced developers
 
 Welcome to the **Assignments** repository! This repository contains a collection of small, educational Java projects developed using either **NetBeans** or **VS Code**. The purpose of these projects is to help developers, especially beginners, learn core Java concepts through practical examples.
