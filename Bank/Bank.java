@@ -64,9 +64,7 @@ public class Bank {
                     user.withdraw();
                     break;
                 case 4:
-
                     break whileLoop;
-
                 default:
                     System.out.println("Invalid Input");
                     break;
