@@ -11,7 +11,7 @@ Here’s a list of some of the projects currently available:
 - **Emolument**: Contains a package that calculates emoluments.
 - **Hypo**: An updated hypotenuse calculator with comments for better understanding.
 - **ManagementPURC**: A simple bill calculator program.
-- **Pop-Ups**: Demonstrates popup usage in Java GUI.
+- **Pop-Ups**: Demonstrates popup usage in Java GUI using JOptionPane.
 - **ShoppingCart**: A simple shopping cart system for learning purposes.
 
 Feel free to explore each project folder and check out the Java files to understand how they work.
@@ -50,6 +50,6 @@ When contributing:
 - Please include a `Projects INSTRUCTIONS.md` file in your project folder.
 - The `Projects INSTRUCTIONS.md` should list the technologies used and provide detailed instructions on how to modify the source code.
 - Comments should be clear and precise and methods should be declared using camel casing eg. `myName`, `firstNumber`, `isMoving`.
-- In case varaibles like `int x;`, `String n` or `boolean b;` is used, comments should be added to explain what the variable represents.
+- In case variables like `int x;`, `String n` or `boolean b;` is used, comments should be added to explain what the variable represents.
 
 If you'd like to improve an existing project or add a new one, feel free to open a pull request.
