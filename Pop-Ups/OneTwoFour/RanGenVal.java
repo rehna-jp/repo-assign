@@ -34,10 +34,10 @@ public class RanGenVal extends Values {
     public String rAirtime() {
         if (isGenerateRandom() && (getAirtime() == 0.00)) {
             double number = gen.nextDouble(1.0, 300);
-            String value = String.format("GHC %5.2f", number);
+            String value = String.format("GHC%5.2f", number);
             return value;
         } else {
-            String value = String.format("GHC %5.2f", getAirtime());
+            String value = String.format("GHC%5.2f", getAirtime());
             return value;
         }
     }
@@ -47,10 +47,22 @@ public class RanGenVal extends Values {
     public String rSMS() {
         if (isGenerateRandom() && (getSMSunits() == 0.0)) {
             int number = gen.nextInt(1, 2000);
-            String value = String.format("SMS %d", number);
+            String value = String.format("SMS: %d", number);
             return value;
         } else {
-            String value = String.format("SMS %d", getSMSunits());
+            String value = String.format("SMS: %d", getSMSunits());
+            return value;
+        }
+    }
+
+    //Method to generate random value for voice time
+    public String rVoice() {
+        if (isGenerateRandom() && (getVoice() == 0.0)) {
+            int number = gen.nextInt(1, 200);
+            String value = String.format("Voice: %d ", number);
+            return value;
+        } else {
+            String value = String.format("Voice: %d", getVoice());
             return value;
         }
     }
