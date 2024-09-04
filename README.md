@@ -50,6 +50,6 @@ When contributing:
 - Please include a `Projects INSTRUCTIONS.md` file in your project folder.
 - The `Projects INSTRUCTIONS.md` should list the technologies used and provide detailed instructions on how to modify the source code.
 - Comments should be clear and precise and methods should be declared using camel casing eg. `myName`, `firstNumber`, `isMoving`.
-- In case variables like `int x;`, `String n` or `boolean b;` is used, comments should be added to explain what the variable represents.
+- In case variables like `int x;`, `String n;` or `boolean b;` is used, comments should be added to explain what the variable represents.
 
 If you'd like to improve an existing project or add a new one, feel free to open a pull request.
