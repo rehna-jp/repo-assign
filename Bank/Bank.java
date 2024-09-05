@@ -4,7 +4,6 @@ import javax.swing.JOptionPane;
 public class Bank {
     // Global variable for balance and Scanner class
     double balance = 0;
-    
 
     // Method to show error message in using JOptionPane
     void Error(String message) {
@@ -73,7 +72,7 @@ public class Bank {
                 case 4:
                     break whileLoop;
                 default:
-                    JOptionPane.showMessageDialog("Invalid Input, try again");
+                    user.Error("Invalid input, please try again");
                     break;
             }
 
