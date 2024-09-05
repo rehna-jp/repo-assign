@@ -72,6 +72,7 @@ public class Bank {
                 case 4:
                     break whileLoop;
                 default:
+		    //Error message if input is invalid
                     user.Error("Invalid input, please try again");
                     break;
             }
