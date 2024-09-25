@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 public class ShoppingCart {
+    static Scanner input = new Scanner(System.in);
 
-	//Method to display items in the cart
-    public void displayCart(Item[] items, int itemCount) {
+    // Method to display items in the cart
+    public static void displayCart(Item[] items, int itemCount) {
         if (itemCount == 0) {
             System.out.println("The cart is empty");
         } else {
             for (int i = 0; i < itemCount; i++) {
-                System.out.println((i + 1) + "." + items[i].name + ":GHC " + items[i].price);
+                System.out.println((i + 1) + "." + items[i].name + "GHC: " + items[i].price);
             }
         }
 
@@ -19,7 +20,8 @@ public class ShoppingCart {
         System.out.println("Total price: GHC " + totalPrice);
     }
 
-    public static int addToCart(Item[] items, int itemCount, Scanner input) {
+    // Method to add an item to cart.
+    public static int addToCart(Item[] items, int itemCount) {
         System.out.println("Enter item name");
         String itemName = input.nextLine();
 
@@ -44,7 +46,8 @@ public class ShoppingCart {
         return itemCount;
     }
 
-    public static int removeFromCart(item[] items, int itemCount, Scanner input) {
+    // Method to remove an item from the cart.
+    public static int removeFromCart(Item[] items, int itemCount) {
         if (itemCount == 0) {
             System.out.println("Cart is empty");
         } else {
@@ -74,13 +77,13 @@ public class ShoppingCart {
         return itemCount;
     }
 
+    // Main method
     public static void main(String[] args) {
 
         Item[] cart = new Item[100];
         int itemCount = 0;
 
-        Scanner option = new Scanner(System.in);
-
+        // Loop to continuously display a menu to the user make a choice.
         while (true) {
             System.out.println("\nMenu");
             System.out.println("1. Add item to cart");
@@ -88,21 +91,22 @@ public class ShoppingCart {
             System.out.println("3. Remove item form cart");
             System.out.println("4.Exit");
             System.out.println("Choose an option: ");
-            int choice = Integer.parseInt(option.nextLine());
+            int choice = Integer.parseInt(input.nextLine());
 
+            // A switch case to display a function based on the user's option.
             switch (choice) {
                 case 1:
-                    itemCount = addToCart(cart, itemCount, option);
+                    itemCount = addToCart(cart, itemCount);
                     break;
                 case 2:
                     displayCart(cart, itemCount);
                     break;
                 case 3:
-                    itemCount = removeFromCart(cart, itemCount, option);
+                    itemCount = removeFromCart(cart, itemCount);
                     break;
                 case 4:
                     System.out.println("Exiting program.");
-                    option.close();
+                    input.close();
                 default:
                     System.out.println("Invalid option. Please try again");
             }
